@@ -1,11 +1,17 @@
+import { sessions } from "@/utils/sessions";
 import { useUser } from "@clerk/clerk-expo";
 import { useConversation } from "@elevenlabs/react-native";
-import { Button, Text, View } from "react-native";
+import { Redirect, useLocalSearchParams } from "expo-router";
+import { Button, ScrollView, Text, View } from "react-native";
 import { red } from "react-native-reanimated/lib/typescript/Colors";
 
 export default function SessionScreen() {
+  const { user } = useUser();
 
-const {user} = useUser(); 
+  const { sessionId } = useLocalSearchParams();
+
+  const session =
+    sessions.find((s) => s.id === Number(sessionId)) ?? sessions[0];
 
   const conversation = useConversation({
     onConnect: () => console.log("Connected to conversation"),
@@ -27,8 +33,8 @@ const {user} = useUser();
         agentId: process.env.EXPO_PUBLIC_AGENT_ID,
         dynamicVariables: {
           user_name: user?.username ?? "Beto",
-          session_title: "test",
-          session_description: "test",
+          session_title: session.title,
+          session_description: session.description,
         },
       });
     } catch (e) {
@@ -45,10 +51,11 @@ const {user} = useUser();
   };
 
   return (
-    <View>
+    <ScrollView contentInsetAdjustmentBehavior="automatic">
       <Text>Session Screen</Text>
+      <Text style={{ fontSize: 32 }}>ID: {sessionId}</Text>
       <Button title="Start conversation" onPress={startConversation} />
       <Button title="End conversation" onPress={endCoversation} color={"red"} />
-    </View>
+    </ScrollView>
   );
 }
