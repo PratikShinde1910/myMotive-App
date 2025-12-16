@@ -1,50 +1,65 @@
-# Welcome to your Expo app 👋
+<table>
+  <tr>
+     <td align="center">
+      <img src="https://github.com/user-attachments/assets/0584d6c9-233f-4277-b185-56906840f586" width="220"/>
+    </td>
+     <td align="center">
+      <img src="https://github.com/user-attachments/assets/dbe47cbc-c7dd-4e2f-9980-91072d88f97b" width="220"/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/8c6c06d3-7834-4366-9fe9-06e60dd3e166" width="220"/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/7366c3db-60fd-425a-91f7-8001c9020e70" width="220"/>
+    </td>
+  </tr>
+</table>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# Motive 🚀
 
-## Get started
+Motive is a mobile application designed to help users stay motivated, consistent, and focused on their daily goals.  
+The app encourages positive habits through goal tracking, reminders, and motivational content.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 📌 About the Application
 
-2. Start the app
+Motive focuses on building self-discipline and consistency in everyday life.  
+It provides users with a simple platform to set goals, track progress, and stay inspired through motivational messages and insights.  
+The application emphasizes simplicity, clean UI, and ease of use.
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🔄 Application Workflow
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Users begin by setting personal goals or daily tasks within the app.
+- The app tracks progress and helps users stay consistent over time.
+- Motivational quotes or messages are shown to encourage users throughout the day.
+- Users can review completed tasks and monitor their improvement.
+- A clean navigation flow ensures smooth movement across different sections of the app.
+- The app promotes habit-building through regular engagement and positive reinforcement.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🛠️ Tech Stack
 
-When you're ready, run:
+- React Native
+- Expo
+- TypeScript / JavaScript
+- Modern UI components
+
+---
+
+## 🚀 Getting Started
+
+Follow the steps below to run the project locally:
 
 ```bash
-npm run reset-project
-```
+git clone
+cd myMotive
+npm install
+npx react-native start
+npx react-native run-android
+npx react-native run-ios
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
